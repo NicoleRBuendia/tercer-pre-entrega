@@ -1,0 +1,75 @@
+/* Productos */
+
+.producto {
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid black;
+
+    h1 {
+        color: $color-celeste;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2rem;
+        color: #212121;
+        padding: 10px;
+    }
+}
+
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+
+    img {
+        max-width: 100%;
+    }
+
+    .tituloProducto{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .descripcionProducto{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+    button {
+        background-color: $color-celeste;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 10px;
+
+        &:hover {
+            background-color: $color-azul;
+        }
+    }
+}
